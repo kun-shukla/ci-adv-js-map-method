@@ -33,7 +33,11 @@ const students = [
   },
 ];
 
-let nums = [1, 2, 3, 4, 5];
+// let nums = [1, 2, 3, 4, 5];
 
-let multiplyByTwo = nums.map((num) => num * 2);
-console.log(multiplyByTwo);
+// let multiplyByTwo = nums.map((num) => num * 2);
+// console.log(multiplyByTwo);
+
+let studentNameId = students.map((student) => [student.name, student.id]);
+
+console.log(studentNameId);
