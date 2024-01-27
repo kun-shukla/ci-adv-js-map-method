@@ -38,6 +38,26 @@ const students = [
 // let multiplyByTwo = nums.map((num) => num * 2);
 // console.log(multiplyByTwo);
 
-let studentNameId = students.map((student) => [student.name, student.id]);
+// let studentNameId = students.map((student) => [student.name, student.id]);
 
-console.log(studentNameId);
+// console.log(studentNameId);
+
+// let studentsByNameIds = students.map((student) => {id: student.id, fName: student.name});
+// console.log(studentsByNameIds);
+
+// const studentObjects = students.map((student) => {
+//   return {
+//     id: student.id,
+//     name: student.name,
+//   };
+// });
+
+// console.log(studentObjects);
+
+let ageValues = [32, 26, 28];
+
+const addItem = students.map((eachObj, index) => {
+  return { ...eachObj, age: ageValues[index] };
+});
+
+console.log(addItem);
